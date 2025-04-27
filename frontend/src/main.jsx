@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
 import App from "./App";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -39,7 +40,14 @@ const router = createBrowserRouter([
       { path: "about-us", element: <About /> },
       { path: "contact-us", element: <Contact /> },
       { path: "men", element: <Men /> },
-      { path: "dashboard", element: <Dashboard /> },
+      {
+        path: "dashboard",
+        element: (
+          <PrivateRoute>
+            <Dashboard />
+          </PrivateRoute>
+        )
+      },
       { path: "women", element: <Women /> },
       { path: "cart", element: <Cart /> },
       { path: "new", element: <New /> },
