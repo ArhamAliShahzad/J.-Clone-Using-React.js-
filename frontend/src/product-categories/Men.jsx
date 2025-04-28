@@ -23,7 +23,7 @@ const MenCollection = () => {
     return "300x400"; // Default for products
   };
 
-  // Enhanced product data for Men's collection
+  // product data for Men's collection
   const productCategories = [
     {
       title: "Aromatics",
