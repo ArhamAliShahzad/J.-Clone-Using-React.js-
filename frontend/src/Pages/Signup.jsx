@@ -16,7 +16,6 @@ import {
   FiLock,
   FiArrowRight
 } from "react-icons/fi";
-import { FaGoogle } from "react-icons/fa";
 
 const CreateAccount = () => {
   const {
